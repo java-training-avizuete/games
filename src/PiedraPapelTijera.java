@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class PiedraPapelTijera {
 
-	public static void main(String[] agrs) {
+	public void jugar() {
 		System.out.println("Bienvenidos a Piedra, Papel, Tijera!");
 
 		Random random = new Random();
@@ -33,11 +33,11 @@ public class PiedraPapelTijera {
 		System.out.println("Fin!");
 	}
 
-	private static void imprimirVs(int jugadaOrdenador, int jugadaUsaurio) {
+	private void imprimirVs(int jugadaOrdenador, int jugadaUsaurio) {
 		System.out.printf("%s vs. %s\n", jugadaALiteral(jugadaUsaurio), jugadaALiteral(jugadaOrdenador));
 	}
 
-	private static String jugadaALiteral(int jugada) {
+	private String jugadaALiteral(int jugada) {
 		switch (jugada) {
 		case 0:
 			return "Piedra";
@@ -50,7 +50,7 @@ public class PiedraPapelTijera {
 		}
 	}
 
-	private static int recogeJugadaUsuario() {
+	private int recogeJugadaUsuario() {
 		
 		Scanner scanner = new Scanner(System.in);
 		int jugadaUsuario;
