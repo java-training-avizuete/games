@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class PiedraPapelTijera {
+public class PiedraPapelTijera implements Juego {
 
 	public void jugar() {
 		System.out.println("Bienvenidos a Piedra, Papel, Tijera!");
